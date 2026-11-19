@@ -1,0 +1,10 @@
+# 页面与离线缓存脚本不长期缓存，保证发布新版本后能及时更新
+/index.html
+  Cache-Control: no-cache
+/sw.js
+  Cache-Control: no-cache
+/manifest.webmanifest
+  Cache-Control: no-cache
+# 带内容哈希的静态资源可长期缓存
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

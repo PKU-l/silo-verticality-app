@@ -1,0 +1,7 @@
+# Netlify 部署配置（Git 连接或 Netlify CLI 部署时生效；拖拽部署时由 public/_headers 提供缓存头）
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"

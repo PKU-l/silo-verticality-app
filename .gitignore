@@ -1,0 +1,8 @@
+node_modules
+dist
+server/data.json
+
+# 构建缓存与本地工具
+*.tsbuildinfo
+.claude/
+*.zip
